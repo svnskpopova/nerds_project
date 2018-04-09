@@ -20,7 +20,7 @@
           <li><a href="#">Корзина</a></li>
         </ul>
       </nav>
-      <h1 class="catalog-title">Магазин готовых шаблонов</h2>
+      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
     </header>
     <main>
       <section class="filters">
@@ -43,16 +43,139 @@
               </fieldset>
           <fieldset>+
             <legend class="filter-price-name">Сетка:</legend>
-            <ul class="filter-net">
+            <ul class="catalog-filter-net">
               <li>
+                
+                <input class="visually-hidden" type="radio" id="adaptiv-field" name="net-filters" value="net">
                 <label for="adaptiv-field">Адаптивная</label>
-                <input type="radio" id="adaptiv-field" name=""
+              </li>
+              <li>
+                
+                <input class="visually-hidden" type="radio" id="fix-field" name="net-filters" value="fix">
+                <label for="fix-field">Фиксированная</label>
+              </li>
+              <li>
+                
+                <input class="visually-hidden" type="radio" id="rubber-field" name="net-filters" value="rubber">
+                <label for="rubber-field">Резиновая</label>
               </li>
             </ul>
-          </fieldset>          
+          </fieldset>  
+          <fieldset>
+            <legend class="filter-price-name">Особенности:</legend>
+            <ul class="catalog-filter-features">
+              <li>
+                
+                <input class="visually-hidden" type="checkbox" id="slider-field" name="slider">
+                <label for="slider-field">Слайдер</label>
+              </li>
+              <li>
+                
+                <input class="visually-hidden" type="checkbox" id="features-field" name="features">
+                <label for="features-field">Блок преимуществ</label>
+              </li>
+              <li>
+                
+                <input class="visually-hidden" type="checkbox" id="news-field" name="news">
+                <label for="news-field">Новости</label>
+              </li>
+              <li>
+                
+                <input class="visually-hidden" type="checkbox" id="gallery-field" name="gallery">
+                <label for="gallery-field">Галерея</label>
+              </li>
+              <li>
+                
+                <input class="visually-hidden" type="checkbox" id="cart-field" name="cart">
+                <label for="cart-field">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="button filter-button">Показать</button>
         </form>
       </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог</h2>
+      <div class="sorting">
+        <h2 class="sorting-title">Сортировать:</h2>
+        <ul class="sorting-list">
+          <li><a class="sorting-item current">По цене:</a></li>
+          <li><a class="sorting-item" href="#">По типу:</a></li>
+          <li><a class="sorting-item" href="#">По названию:</a></li>          
+        </ul>
+        <button type="button" class="sorting-down" href="#"></button>
+        <button type="button" class="sorting-down" href="#"></button>
+      </div>
       
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <p class="goods-image">
+<!--             img-->
+            </p>
+            <div class="goods-action">
+              <h3 class="goods-name">sedona</h3>
+              <p class="goods-description">Информационный сайт для туристов</p>
+              <a class="goods-action-button button">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <p class="goods-image">
+<!--             img-->
+            </p>
+            <div class="goods-action">
+              <h3 class="goods-name">pink app</h3>
+              <p class="goods-description">Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="goods-action-button button">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <p class="goods-image">
+<!--             img-->
+            </p>
+            <div class="goods-action">
+              <h3 class="goods-name">barbershop</h3>
+              <p class="goods-description">Сайт салона красоты. Для мужчин, да.</p>
+              <a class="goods-action-button button">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <p class="goods-image">
+<!--             img-->
+            </p>
+            <div class="goods-action">
+              <h3 class="goods-name">mishka</h3>
+              <p class="goods-description">Интернет-магазин вязанных игрушек</p>
+              <a class="goods-action-button button">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <p class="goods-image">
+<!--             img-->
+            </p>
+            <div class="goods-action">
+              <h3 class="goods-name">a plus</h3>
+              <p class="goods-description">Лендинг курсов повышения квалификации</p>
+              <a class="goods-action-button button">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <p class="goods-image">
+<!--             img-->
+            </p>
+            <div class="goods-action">
+              <h3 class="goods-name">кваст</h3>
+              <p class="goods-description">Промо-сайт производителя крафтового кваса</p>
+              <a class="goods-action-button button">9 900 руб.</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li><a class="pagination-item current">1</a></li>
+          <li><a class="pagination-item" href="#">2</a></li>
+          <li><a class="pagination-item" href="#">3</a></li>
+          <li><a class="pagination-item" href="#">Следующая</a></li>
+        </ul>
+      </section>
       
     </main>
     <footer class="footer">
@@ -78,5 +201,17 @@
         </div>
       </div>
     </footer>
+    <section class="modul-write-us">
+      <h2 class="modul-title">Напишите нам</h2>
+      <form class="write-us" action="#" method="post">
+      <label for="name-field">Ваше имя:</label>
+      <input type="text" id="name-field" name="name-field" placeholder="Имя Фамилия">
+      <label for="email-field">Ваш e-mail:</label>
+      <input type="text" id="email-field" name="email-field" placeholder="email@example.com">
+      <label for="letter-field">Текст письма:</label>
+      <textarea id="letter-field" name="letter-field" placeholder="В свободной форме" rows="5"></textarea>
+        <button type="submit" class="modul-button button">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
