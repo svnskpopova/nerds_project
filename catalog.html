@@ -7,16 +7,16 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="#" class="main-header-logo">
-<!--          вставить img лого-->
+        <a href="index.html" class="main-header-logo">
+          <img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип дизайн студии Нёрдс">
         </a>
-        <ul class="site-navigation">
+        <ul class="site-navigation" aria-label="Меню сайта">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul class="user-navigation">
+        <ul class="user-navigation" aria-label="Меню пользователя">
           <li><a href="#">Корзина</a></li>
         </ul>
       </nav>
@@ -43,7 +43,7 @@
               </fieldset>
           <fieldset>+
             <legend class="filter-price-name">Сетка:</legend>
-            <ul class="catalog-filter-net">
+            <ul class="catalog-filter-net" aria-label="Список значений фильтра Сетка">
               <li>
                 
                 <input class="visually-hidden" type="radio" id="adaptiv-field" name="net-filters" value="net">
@@ -63,7 +63,7 @@
           </fieldset>  
           <fieldset>
             <legend class="filter-price-name">Особенности:</legend>
-            <ul class="catalog-filter-features">
+            <ul class="catalog-filter-features" aria-label="Список значений фильтра Особенности">
               <li>
                 
                 <input class="visually-hidden" type="checkbox" id="slider-field" name="slider">
@@ -103,73 +103,73 @@
           <li><a class="sorting-item" href="#">По типу:</a></li>
           <li><a class="sorting-item" href="#">По названию:</a></li>          
         </ul>
-        <button type="button" class="sorting-down" href="#"></button>
-        <button type="button" class="sorting-down" href="#"></button>
+        <button type="button" class="sorting-down" href="#" aria-label="Сортировка товаров по убыванию"></button>
+        <button type="button" class="sorting-up" href="#" aria-label="Сортировка товаров по возрастанию"></button>
       </div>
       
-        <ul class="catalog-list">
+        <ul class="catalog-list" aria-label="Список товаров">
           <li class="catalog-item">
             <p class="goods-image">
-<!--             img-->
+              <img src="img/img-sedona.jpg" width="360px" height="576px" alt="Информационный сайт для туристов sedona">
             </p>
             <div class="goods-action">
               <h3 class="goods-name">sedona</h3>
               <p class="goods-description">Информационный сайт для туристов</p>
-              <a class="goods-action-button button">9 900 руб.</a>
+              <a class="goods-action-button button" aria-label="Добавить в корзину">9 900 руб.</a>
             </div>
           </li>
           <li class="catalog-item">
             <p class="goods-image">
-<!--             img-->
+              <img src="img/img-pink.jpg" width="360px" height="576px" alt="Продуктовый лендинг приложения для iOS и Android pink app">
             </p>
             <div class="goods-action">
               <h3 class="goods-name">pink app</h3>
               <p class="goods-description">Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="goods-action-button button">9 900 руб.</a>
+              <a class="goods-action-button button" aria-label="Добавить в корзину">9 900 руб.</a>
             </div>
           </li>
           <li class="catalog-item">
             <p class="goods-image">
-<!--             img-->
+              <img src="img/img-barbershop.jpg" width="360px" height="576px" alt="Сайт салона красоты для мужчин barbershop">
             </p>
             <div class="goods-action">
               <h3 class="goods-name">barbershop</h3>
               <p class="goods-description">Сайт салона красоты. Для мужчин, да.</p>
-              <a class="goods-action-button button">9 900 руб.</a>
+              <a class="goods-action-button button" aria-label="Добавить в корзину">9 900 руб.</a>
             </div>
           </li>
           <li class="catalog-item">
             <p class="goods-image">
-<!--             img-->
+              <img src="img/img-mishka.jpg" width="360px" height="576px" alt="Интернет-магазин вязанных игрушек mishka">
             </p>
             <div class="goods-action">
               <h3 class="goods-name">mishka</h3>
               <p class="goods-description">Интернет-магазин вязанных игрушек</p>
-              <a class="goods-action-button button">9 900 руб.</a>
+              <a class="goods-action-button button" aria-label="Добавить в корзину">9 900 руб.</a>
             </div>
           </li>
           <li class="catalog-item">
             <p class="goods-image">
-<!--             img-->
+              <img src="img/img-aplus.jpg" width="360px" height="576px" alt="Лендинг курсов повышения квалификации a plus">
             </p>
             <div class="goods-action">
               <h3 class="goods-name">a plus</h3>
               <p class="goods-description">Лендинг курсов повышения квалификации</p>
-              <a class="goods-action-button button">9 900 руб.</a>
+              <a class="goods-action-button button" aria-label="Добавить в корзину">9 900 руб.</a>
             </div>
           </li>
           <li class="catalog-item">
             <p class="goods-image">
-<!--             img-->
+              <img src="img/img-kvast.jpg" width="360px" height="576px" alt="Промо-сайт производителя крафтового кваса кваст">
             </p>
             <div class="goods-action">
               <h3 class="goods-name">кваст</h3>
               <p class="goods-description">Промо-сайт производителя крафтового кваса</p>
-              <a class="goods-action-button button">9 900 руб.</a>
+              <a class="goods-action-button button" aria-label="Добавить в корзину">9 900 руб.</a>
             </div>
           </li>
         </ul>
-        <ul class="pagination-list">
+        <ul class="pagination-list" aria-label="Нумерация страниц">
           <li><a class="pagination-item current">1</a></li>
           <li><a class="pagination-item" href="#">2</a></li>
           <li><a class="pagination-item" href="#">3</a></li>
@@ -187,10 +187,10 @@
           <p class="footer-adress-phone">тел. +7(812)275-75-75</p>
           <a href="writeus.html" class="button write-us-button">напишите нам</a>
         </div>
-<!--        вставить img карты-->
+        <img src="img/map.jpg" width="1440px" height="416px" alt="Офис компании по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
       </section>
       <div class="footer-low">
-        <ul class="social-list">
+        <ul class="social-list" aria-label="Список социальных сетей">
           <li><a class="social-item" href="#">Вконтакте</a></li>
           <li><a class="social-item" href="#">Фейсбук</a></li>
           <li><a class="social-item" href="#">Инстаграмм</a></li>
